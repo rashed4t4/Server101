@@ -1,0 +1,25 @@
+{
+  "name": "classwork6",
+  "version": "1.0.0",
+  "description": "simple node server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashed4t4/classwork5.git"
+  },
+  "author": "RI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rashed4t4/classwork5/issues"
+  },
+  "homepage": "https://github.com/rashed4t4/classwork5#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.0"
+  }
+}
