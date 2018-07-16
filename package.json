@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/rashed4t4/classwork5#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.0"
