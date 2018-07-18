@@ -12,8 +12,8 @@
   </head>
   <body>
     <h2>Sign In</h2>
-    <input id="email" type="email" placeholder="email"/>
-    <input id="password" type="password"/>
+    <input id="name" type="text" />
+    <input id="email" type="text"/>
     <button id="submit">Submit</button>
     <br/>
     <div id="error"></div>
@@ -22,16 +22,16 @@
   
   <script>
   var user = {};
+    $("#name").change(function(event){
+      user.name=$("#name").val();
+    });
     $("#email").change(function(event){
       user.email=$("#email").val();
-    });
-    $("#password").change(function(event){
-      user.password=$("#password").val();
     });
     $("#submit").click(function(event){
       $.ajax({
         method: 'POST',
-        url: "/signin",
+        url: "/submit_user",
         data: user
       }).done(function(response){
         console.log(response);

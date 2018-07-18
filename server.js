@@ -13,11 +13,11 @@
   app.get('/about', function(req, res){
     res.sendFile(__dirname+'/about.html');
   });
-  app.get('/signin', function(req, res){
-    res.sendFile(__dirname+'/signin.html');
+  app.get('/form', function(req, res){
+    res.sendFile(__dirname+'/form.html');
   });
-  app.post('/signin', function(req, res){
-    console.log(JSON.stringify(req.body, null, 2));
+  app.post('/submit_user', function(req, res){
+    console.log(JSON.stringify(req.body));
   });
   server.listen(process.env.PORT, process.env.IP, function(){
     console.log('Server running');
